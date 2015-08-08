@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+
+<!-- Default Main Template -->
+    <definition name="base" template="/WEB-INF/jsp/base.jsp">
+        <put-attribute name="title" value="" type="string" />
+        <put-attribute name="body_class" value="" type="string" />
+        <put-attribute name="sidebar_first" value="" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="sidebar_second" value="" />
+        <put-attribute name="footer" value="" />
+    </definition>
+       
+    
+    
+    <!-- 主页 -->
+    <definition name="index" extends="base">
+        <put-attribute name="title" value="ice_eye" type="string" />
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+   
+    
+</tiles-definitions>
